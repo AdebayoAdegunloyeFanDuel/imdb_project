@@ -89,7 +89,7 @@ public class Movie {
     public void setId() {
         this.id = id;
         Random random = new Random();
-        random.nextInt(10000);  // 10000 is the max random number, change that to whatever you want
+        id = random.nextInt(10000);  // 10000 is the max random number, change that to whatever you want
     }
 
 }

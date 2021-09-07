@@ -19,7 +19,7 @@ public class MoviesToJson {
         for (String[] movie: imdbRecordScanner.generateIMDBRawData()){
             Movie rawMovie = new Movie(movie);
 
-            movieMap.put(Integer.valueOf(rawMovie.setId()), rawMovie);
+            movieMap.put(rawMovie.getId(), rawMovie);
         }
         return movieMap;
     }
